@@ -1,0 +1,523 @@
+@import './reset';
+@import './variables';
+
+/* header and nav styles */
+.header{
+    background-color: $color5;
+    position: fixed;
+    z-index: 999;
+    top:0;
+    left: 0;
+    right: 0;
+    header{
+        padding: 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 1%;
+            flex-flow: row wrap;
+            justify-content:center;
+            align-items: space-between;
+            li{
+                flex-basis: 48%;
+                margin-bottom: 0.5rem;
+                background-color: $color10;
+                border-radius: 5px;
+                display: block;
+                &:hover{
+                    background-color: $color1;
+                    color: $color5;
+                }
+                &:first-child{
+                    flex-basis: 100%;
+                    text-align: center;
+                    background-color: transparent;
+                    a{
+                        img{
+                            height: 22px;
+                        }
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    color: white;
+                    display: block;
+                    padding: 0.5rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+#hero{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    background-color: $color7;
+    picture{
+        img{
+            max-width: 100%;
+            max-height: 454px;
+        }
+    }
+}
+
+#mission{
+    margin-bottom: 3rem;
+    // h2{}
+    div{
+        display: block;
+        line-height: 1.8;
+        p{
+            img{
+                max-height: 100px;
+                display: block;
+            }
+        }
+    }
+}
+
+.stripe{
+    background-color: $color2;
+    padding: 3rem 0;
+    section{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+        h2{
+            margin-top: 0;
+            margin-left: 20px;
+            color: white;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            li{
+                margin: 0;
+                padding: 0;
+                figure{
+                    margin-bottom:0 0 0.5rem 0;
+                    padding: 0;
+                    max-height: 400px;
+                    overflow: hidden;
+                    position: relative;
+                    overflow: hidden;
+                    border-radius: 5px;
+                    border-style: solid;
+                    border-width: 10px;
+                    img{
+                    width: 100%;
+                    object-fit: cover;
+                    }
+                    figcaption{
+                        position: absolute;
+                        bottom: 0;
+                        width: 100%;
+                        margin: 0;
+                        padding: 0;
+                        font-size: 1.87rem;
+                        background-color:  rgba(255, 255, 255, 0.8);
+                        a{
+                            display: block;
+                            font-weight: 600;
+                            padding: 1rem;
+                            text-decoration: none;
+                            color:$color1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .pic1{
+        border-color: $color8;
+        a{
+            &:hover{
+                color: $color8;
+            }
+        }
+    }
+
+    .pic2{
+        border-color: $color7;
+        a{
+            &:hover{
+                color: $color7;
+            }
+        }
+    }
+    
+    .pic3{
+        border-color: $color4;
+        a{
+            &:hover{
+                color: $color4;
+            }
+        }
+    }
+
+}
+
+.featured{
+    figure{
+        margin: 0 0 0.5rem 0;
+        padding: 0;
+        max-height: 400px;
+        overflow: hidden;
+        position: relative;
+        border-width: 10px;
+        border-style: solid;
+        border-radius: 5px;
+        border-color: $color6;
+        img{
+            margin-bottom: -4px;
+            width: 100%;
+            object-fit: cover;
+        }
+        figcaption{
+            background-color:  rgba(255, 255, 255, 0.8);
+            font-size: 1.87rem;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            a{
+                display: block;
+                font-weight: 600;
+                padding: 1rem;
+                text-decoration: none;
+                color:$color1;
+                &:hover{
+                    color: $color6;
+                }
+            }
+        }
+    }
+}
+
+/* Initial mobile layout: a series of images stacked on top of each other with the figure caption over the image. */
+#collections{
+    ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        li{
+            margin-bottom: 2rem;
+            figure{
+                margin: 0 0 0.5rem 0;
+                padding: 0;
+                max-height: 400px;
+                overflow: hidden;
+                position: relative;
+                border-width: 10px;
+                border-style: solid;
+                border-radius: 5px;
+                img{
+                    margin-bottom: -4px;
+                    width: 100%;
+                    object-fit: cover;
+                    // object-position: 0 -150px;
+                }
+                figcaption{
+                    background-color:  rgba(255, 255, 255, 0.8);
+                    font-size: 1.87rem;
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    a{
+                        display: block;
+                        font-weight: 600;
+                        padding: 1rem;
+                        text-decoration: none;
+                        color:$color1;
+                    }
+                }
+            }
+        }
+    }
+    .fig1, .fig1 a:hover{
+        border-color: $color8;
+        color: $color8;
+    }
+    .fig2, .fig2 a:hover{
+        border-color: $color2;
+        color: $color2;
+    }
+    .fig3, .fig3 a:hover{
+        border-color: $color7;
+        color: $color7;
+    }
+    .fig4, .fig4 a:hover{
+        border-color: $color9;
+        color: $color9;
+    }
+    .fig5, .fig5 a:hover{
+        border-color: $color4;
+        color: $color4;
+    }
+    .fig6, .fig6 a:hover{
+        border-color: $color3;
+        color: $color3;
+    }
+}
+
+
+.footer{
+    background-color: $color5;
+    footer{
+        display: flex;
+        flex-flow: column nowrap;
+        max-width: 1200px;
+        padding: 3rem;
+        margin: 0 auto;
+        div{
+            h4{
+                margin-top: 0;
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                display: flex;
+                flex-flow: row wrap;
+                li{
+                   margin-right: 1rem; 
+                }
+            }
+        }
+        address{
+            margin-top: 2rem;
+            font-style: normal;
+            font-weight: bold;
+        }
+    }
+}
+/* At this breakpoint, transition to 2 figures per line */
+
+@media (min-width: 550px) {
+    .header{
+        header{
+            ul{
+                justify-content:center;
+                gap: 0.5em;
+                li{
+                   flex-basis: auto;
+                   margin-bottom: 0;
+                   background-color: transparent;
+                   &:hover{
+                    background-color: transparent;
+                   }
+                   &:first-child{
+                    a{
+                        img{
+                            height: 28px;
+                        }
+                    }
+                   }
+                    a{
+                       color: $color1;
+                       &:hover{
+                        color: $color2;
+                       }
+                    }
+                }
+            }
+        }
+    }
+
+    
+    #mission{
+        div{
+            /* display: flow-root clears the float!!!! max-width keeps the text line length shorter */
+            display: flow-root;
+            max-width: 900px;
+            p{
+                img{
+                    /* working with an image with a wide width so we have flexibility to set the shape-outside polygon points where we want. The edges of the image limit their placement. In Firefox, you can draw with shape-outside in browser tools */
+                    
+                    float: left;
+                    shape-outside: polygon(35.84% 94.87%, 34.64% 87.05%, 51.64% 4.06%, 55.1% 2.38%);
+                    max-height: 150px;
+                }
+            }
+        }
+    }
+    
+    .stripe{
+        section{
+            ul{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                list-style-type: none;
+                gap: 1%;
+                margin: 0;
+                padding: 0;
+                li{
+                    flex-basis: 48%;
+                    margin-bottom: 0.5rem;
+                    &:nth-child(3){
+                        flex-basis: 97%;
+                        figure{
+                            img{
+                                width: 100%;
+                                object-position: 0 -350px;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                    figure{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    #collections{
+        ul{
+            li{
+                flex-basis: 48%;
+                figure{
+                    img{
+                        /* turn off object position, inherit object-fit: cover */
+                        object-position: 0;
+                    }
+                }
+            }
+        }
+
+    }
+    .footer{
+        footer{
+            justify-content: space-between;
+            flex-flow: row wrap;
+            div{
+                flex-basis: 49.5%;
+            }
+            address{
+                margin-top: 0;
+                flex-basis: 49.5%;
+            }
+        }
+    }
+}
+
+
+/* At this breakpoint, transition to 3 figures per line */
+
+@media (min-width: 800px) {
+    /* navigation - logo in the center */
+    .header{
+        header{
+            ul{
+                justify-content:flex-end;
+                li{
+                    &:first-child{
+                        flex-basis: auto;
+                        margin: 0 auto;
+                        order: 2;
+                        a{
+                            img{
+                                height: 32px;
+                            }
+                        }
+                    }
+                    &:nth-child(2),&:nth-child(3){
+                        order: 1;
+                    }
+                    &:nth-child(4),&:nth-child(5){
+                        order: 3;
+                    }
+                    a{
+                        text-decoration: none;
+                        font-size: 1.2rem;
+                        color: $color1;
+                        display: block;
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .stripe{
+        padding: 5rem 0;
+        section{
+            h2{
+                margin-left: 20px;
+            }
+            ul{
+                gap:2%;
+                margin: 0;
+                padding: 0;
+                li{
+                    max-height: 400px;
+                    flex-basis: 32%;
+                    &:nth-child(3){
+                        flex-basis: 32%;
+                        figure{
+                            img{
+                                object-position: 0;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #collections{
+        h2{
+            margin-left: 100px;
+        }
+        ul{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            li{
+                flex-basis: 32.5%;
+                figure{
+                    img{
+                        /* turn off object position, inherit object-fit: cover */
+                        object-position: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    #mission{
+        div{
+            p{
+                img{
+                    max-height: 211px;
+                }
+            }
+        }
+    }
+
+    .footer{
+        footer{
+            div{
+                flex-basis: 32.5%;
+            }
+            address{
+                margin-top: 0;
+                flex-basis: 65.5%;
+            }
+        }
+    }
+}

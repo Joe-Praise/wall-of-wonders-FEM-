@@ -1,0 +1,469 @@
+/* generic site styles */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #DBE5DE;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+section h2 {
+  font-size: 2.5rem;
+}
+
+/* header and nav styles */
+.header {
+  background-color: #e9d8a6;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.header header {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1%;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: space-between;
+}
+.header header ul li {
+  flex-basis: 48%;
+  margin-bottom: 0.5rem;
+  background-color: #9b2226;
+  border-radius: 5px;
+  display: block;
+}
+.header header ul li:hover {
+  background-color: #001219;
+  color: #e9d8a6;
+}
+.header header ul li:first-child {
+  flex-basis: 100%;
+  text-align: center;
+  background-color: transparent;
+}
+.header header ul li:first-child a img {
+  height: 22px;
+}
+.header header ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  display: block;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+#hero {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  background-color: #ca6702;
+}
+#hero picture img {
+  max-width: 100%;
+  max-height: 454px;
+}
+
+#mission {
+  margin-bottom: 3rem;
+}
+#mission div {
+  display: block;
+  line-height: 1.8;
+}
+#mission div p img {
+  max-height: 100px;
+  display: block;
+}
+
+.stripe {
+  background-color: #005f73;
+  padding: 3rem 0;
+}
+.stripe section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+.stripe section h2 {
+  margin-top: 0;
+  margin-left: 20px;
+  color: white;
+}
+.stripe section ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.stripe section ul li {
+  margin: 0;
+  padding: 0;
+}
+.stripe section ul li figure {
+  margin-bottom: 0 0 0.5rem 0;
+  padding: 0;
+  max-height: 400px;
+  overflow: hidden;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 10px;
+}
+.stripe section ul li figure img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.stripe section ul li figure figcaption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 1.87rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.stripe section ul li figure figcaption a {
+  display: block;
+  font-weight: 600;
+  padding: 1rem;
+  text-decoration: none;
+  color: #001219;
+}
+.stripe .pic1 {
+  border-color: #bb3e03;
+}
+.stripe .pic1 a:hover {
+  color: #bb3e03;
+}
+.stripe .pic2 {
+  border-color: #ca6702;
+}
+.stripe .pic2 a:hover {
+  color: #ca6702;
+}
+.stripe .pic3 {
+  border-color: #94d28d;
+}
+.stripe .pic3 a:hover {
+  color: #94d28d;
+}
+
+.featured figure {
+  margin: 0 0 0.5rem 0;
+  padding: 0;
+  max-height: 400px;
+  overflow: hidden;
+  position: relative;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #ee9800;
+}
+.featured figure img {
+  margin-bottom: -4px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.featured figure figcaption {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.87rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.featured figure figcaption a {
+  display: block;
+  font-weight: 600;
+  padding: 1rem;
+  text-decoration: none;
+  color: #001219;
+}
+.featured figure figcaption a:hover {
+  color: #ee9800;
+}
+
+/* Initial mobile layout: a series of images stacked on top of each other with the figure caption over the image. */
+#collections ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#collections ul li {
+  margin-bottom: 2rem;
+}
+#collections ul li figure {
+  margin: 0 0 0.5rem 0;
+  padding: 0;
+  max-height: 400px;
+  overflow: hidden;
+  position: relative;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 5px;
+}
+#collections ul li figure img {
+  margin-bottom: -4px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#collections ul li figure figcaption {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.87rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+#collections ul li figure figcaption a {
+  display: block;
+  font-weight: 600;
+  padding: 1rem;
+  text-decoration: none;
+  color: #001219;
+}
+#collections .fig1, #collections .fig1 a:hover {
+  border-color: #bb3e03;
+  color: #bb3e03;
+}
+#collections .fig2, #collections .fig2 a:hover {
+  border-color: #005f73;
+  color: #005f73;
+}
+#collections .fig3, #collections .fig3 a:hover {
+  border-color: #ca6702;
+  color: #ca6702;
+}
+#collections .fig4, #collections .fig4 a:hover {
+  border-color: #ae2012;
+  color: #ae2012;
+}
+#collections .fig5, #collections .fig5 a:hover {
+  border-color: #94d28d;
+  color: #94d28d;
+}
+#collections .fig6, #collections .fig6 a:hover {
+  border-color: #3d9397;
+  color: #3d9397;
+}
+
+.footer {
+  background-color: #e9d8a6;
+}
+.footer footer {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 1200px;
+  padding: 3rem;
+  margin: 0 auto;
+}
+.footer footer div h4 {
+  margin-top: 0;
+}
+.footer footer div ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+}
+.footer footer div ul li {
+  margin-right: 1rem;
+}
+.footer footer address {
+  margin-top: 2rem;
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* At this breakpoint, transition to 2 figures per line */
+@media (min-width: 550px) {
+  .header header ul {
+    justify-content: center;
+    gap: 0.5em;
+  }
+  .header header ul li {
+    flex-basis: auto;
+    margin-bottom: 0;
+    background-color: transparent;
+  }
+  .header header ul li:hover {
+    background-color: transparent;
+  }
+  .header header ul li:first-child a img {
+    height: 28px;
+  }
+  .header header ul li a {
+    color: #001219;
+  }
+  .header header ul li a:hover {
+    color: #005f73;
+  }
+  #mission div {
+    /* display: flow-root clears the float!!!! max-width keeps the text line length shorter */
+    display: flow-root;
+    max-width: 900px;
+  }
+  #mission div p img {
+    /* working with an image with a wide width so we have flexibility to set the shape-outside polygon points where we want. The edges of the image limit their placement. In Firefox, you can draw with shape-outside in browser tools */
+    float: left;
+    shape-outside: polygon(35.84% 94.87%, 34.64% 87.05%, 51.64% 4.06%, 55.1% 2.38%);
+    max-height: 150px;
+  }
+  .stripe section ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style-type: none;
+    gap: 1%;
+    margin: 0;
+    padding: 0;
+  }
+  .stripe section ul li {
+    flex-basis: 48%;
+    margin-bottom: 0.5rem;
+  }
+  .stripe section ul li:nth-child(3) {
+    flex-basis: 97%;
+  }
+  .stripe section ul li:nth-child(3) figure img {
+    width: 100%;
+    -o-object-position: 0 -350px;
+       object-position: 0 -350px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .stripe section ul li figure {
+    margin: 0;
+  }
+  #collections ul li {
+    flex-basis: 48%;
+  }
+  #collections ul li figure img {
+    /* turn off object position, inherit object-fit: cover */
+    -o-object-position: 0;
+       object-position: 0;
+  }
+  .footer footer {
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+  .footer footer div {
+    flex-basis: 49.5%;
+  }
+  .footer footer address {
+    margin-top: 0;
+    flex-basis: 49.5%;
+  }
+}
+/* At this breakpoint, transition to 3 figures per line */
+@media (min-width: 800px) {
+  /* navigation - logo in the center */
+  .header header ul {
+    justify-content: flex-end;
+  }
+  .header header ul li:first-child {
+    flex-basis: auto;
+    margin: 0 auto;
+    order: 2;
+  }
+  .header header ul li:first-child a img {
+    height: 32px;
+  }
+  .header header ul li:nth-child(2), .header header ul li:nth-child(3) {
+    order: 1;
+  }
+  .header header ul li:nth-child(4), .header header ul li:nth-child(5) {
+    order: 3;
+  }
+  .header header ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #001219;
+    display: block;
+    padding: 1rem;
+  }
+  .stripe {
+    padding: 5rem 0;
+  }
+  .stripe section h2 {
+    margin-left: 20px;
+  }
+  .stripe section ul {
+    gap: 2%;
+    margin: 0;
+    padding: 0;
+  }
+  .stripe section ul li {
+    max-height: 400px;
+    flex-basis: 32%;
+  }
+  .stripe section ul li:nth-child(3) {
+    flex-basis: 32%;
+  }
+  .stripe section ul li:nth-child(3) figure img {
+    -o-object-position: 0;
+       object-position: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #collections h2 {
+    margin-left: 100px;
+  }
+  #collections ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  #collections ul li {
+    flex-basis: 32.5%;
+  }
+  #collections ul li figure img {
+    /* turn off object position, inherit object-fit: cover */
+    -o-object-position: 0;
+       object-position: 0;
+  }
+  #mission div p img {
+    max-height: 211px;
+  }
+  .footer footer div {
+    flex-basis: 32.5%;
+  }
+  .footer footer address {
+    margin-top: 0;
+    flex-basis: 65.5%;
+  }
+}/*# sourceMappingURL=woorksheet.css.map */
